@@ -89,6 +89,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
   const mode = useAppSelector((state) => state.user.mode);
   const theme = responsiveFontSizes(
     createTheme({
+/*
       palette: {
         mode: mode as PaletteMode,
         primary: {
@@ -158,6 +159,30 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           gold: 'linear-gradient(180deg, #A3873C 0%, #E3D294 100%)',
         },
       },
+*/
+
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#0c234b',
+    },
+    secondary: {
+      main: '#ab0520',
+    },
+    error: {
+      main: '#EF4056',
+    },
+    warning: {
+      main: '#A95C42',
+    },
+    info: {
+      main: '#378DBD',
+    },
+    success: {
+      main: '#70B865',
+    },
+  },
+
 
       typography: {
         fontFamily: 'Dosis, sans-serif',
