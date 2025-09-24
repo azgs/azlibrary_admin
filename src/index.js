@@ -15,6 +15,8 @@ import AZlibAdminInterface from './components/AZlibAdminInterface';
 import './index.css';
 import About from './components/About/About';
 import HowToUseAzlibAdmin from './components/HowToUseAzlibAdmin/HowToUseAzlibAdmin';
+import Profile from './components/Profile';
+import Account from './components/Account';
 
 //import '@fontsource/roboto/300.css';
 //import '@fontsource/roboto/400.css';
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
             {
                 path: "login",
                 element: <LoginForm/>
+            },
+            {
+                path: "profile",
+                element: <Profile/>
+            },
+            {
+                path: "account",
+                element: <Account/>
             },
             {
                 path: "about",
