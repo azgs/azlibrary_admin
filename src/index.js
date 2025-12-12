@@ -111,7 +111,7 @@ const router = createBrowserRouter([
         ]
     },
     
-]);
+], {basename: "/admin"});
 
 const theme = createTheme({
     palette: {
