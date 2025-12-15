@@ -132,10 +132,10 @@ const CollectionMutateForm = ({handleSubmit: hSubmit, mode}) => {
             },
             private: false,
             bounding_box: {
-                west: -113,
-                south: 33.5,
-                east: -112,
-                north: 34
+                west: -115,
+                south: 31,
+                east: -109,
+                north: 37
             },
                 
             keywords: [/*{
