@@ -25,10 +25,8 @@ const authorShape = {
 const authorSchema = Yup.object().shape({
     person: Yup.string()
         .required('Person is required'),
-    givenname: Yup.string()
-        .required('Given name is required'),
-    surname: Yup.string()
-        .required('Surname is required'),
+    givenname: Yup.string().nullable(),
+    surname: Yup.string().nullable(),
     organization: Yup.string().nullable(),
 });
 const AuthorFields = ({index, control, errors}) => {
